@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'jf-openhuninn';
+    src: url('/font/jf-openhuninn-2.0.ttf') format('truetype') !important;
+    font-display: Arial, sans-serif; /* 確保在字體加載失敗時提供替代方案 */
+}
+* {
+    font-family: 'jf-openhuninn', sans-serif; 
+    color: #071224 ;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FEFAF6 !important;
+    background-size: cover;
+}
+.btn-primary{
+    background-color: #DAC0A3 !important;
+    border: 0px !important;
+    color: #102C57 !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .btn-primary{
+        align-items: center !important;
+        justify-content: center !important;
+        min-width: 350px;
+        min-height: 60px;
+        border-radius: 100px !important;
+    }
+    .center{
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+.container-full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.content {
+    flex-grow: 1;
+}
+.footer {
+    display: flex;
+    justify-content: center !important;
+    padding-bottom: 20px; /* Optional: Add some padding at the bottom */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+.container {
+    text-align: center;
+    flex: 1;
+}
+.question {
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.visible {
+    opacity: 1;
+}
+.option-label {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 2px solid #DAC0A3;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #EADBC8;
+}
+.option-label:hover, .option-input:checked + .option-label {
+    background-color: #DAC0A3;
+    color: white;
+}
+.option-input {
+    display: none;
+}
+.answer {
+    font-weight: bold;
+    color: #f88746;
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto; /* 使 .answer 在容器中水平居中 */
+}
+.footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'jf-openhuninn';
+    src: url('/font/jf-openhuninn-2.0.ttf') format('truetype') !important;
+    font-display: Arial, sans-serif; /* 確保在字體加載失敗時提供替代方案 */
+}
+* {
+    font-family: 'jf-openhuninn', sans-serif; 
+}
+.color{
+    color: #071224;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #FEFAF6 !important;
+    background-size: cover;
+}
+
+.btn-primary {
+    background-color: #DAC0A3 !important;
+    border: 0px !important;
+    color: #102C57 !important;
+}
+
+.size {
+    font-size: 20px !important;
+}
+
+textarea.form-control {
+    border: 1px solid #DAC0A3;
+    transition: border-color 0.3s ease-in-out;
+    outline: none !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    border: 1px solid #DAC0A3 !important;
+    box-shadow: 0 0 10px #DAC0A3 !important;
+}
+
+.star-rating {
+    direction: rtl;
+    font-size: 2em;
+    unicode-bidi: bidi-override;
+    display: inline-block;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #bbb;
+    font-size: 2em;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.star-rating input:checked~label,
+.star-rating input:hover~label,
+.star-rating label:hover~label {
+    color: #f2b600;
+}
+
+@media only screen and (max-width: 992px) {
+    .btn-primary {
+        align-items: center !important;
+        justify-content: center !important;
+        min-width: 350px;
+        min-height: 60px;
+        border-radius: 100px !important;
+    }
+
+    .center {
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    h1 {
+        padding-left: 1.25rem;
+    }
+
+    .star-rating {
+        font-size: 18px;
+    }
+}
+
+.container-full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px; /* Optional: Add some padding at the bottom */
+}
+
+.mt{
+    margin-top: 2.5rem !important;
+}

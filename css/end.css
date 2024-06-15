@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'jf-openhuninn';
+    src: url('/font/jf-openhuninn-2.0.ttf') format('truetype') !important;
+    font-display: Arial, sans-serif; /* 確保在字體加載失敗時提供替代方案 */
+}
+* {
+    font-family: 'jf-openhuninn', sans-serif; 
+    color: #071224 !important;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FEFAF6 !important;
+    background-size: cover;
+}
+.btn-primary{
+    background-color: #DAC0A3 !important;
+    border: 0px !important;
+    color: #102C57 !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .btn-primary{
+        align-items: center !important;
+        justify-content: center !important;
+        min-width: 350px;
+        min-height: 60px;
+        border-radius: 100px !important;
+    }
+    .center{
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+.container-full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.content {
+    flex-grow: 1;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px; /* Optional: Add some padding at the bottom */
+}
+button {
+    border-radius: 30px !important;
+    background-color: #DAC0A3 !important;
+    text-align: center;
+}
+#email-form{
+    text-align: center;
+    margin-top: 3em;
+}

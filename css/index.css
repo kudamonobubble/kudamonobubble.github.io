@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'jf-openhuninn';
+    src: url('/font/jf-openhuninn-2.0.ttf') format('truetype') !important;
+    font-display: Arial, sans-serif; /* 確保在字體加載失敗時提供替代方案 */
+}
+* {
+    font-family: 'jf-openhuninn', sans-serif; 
+    color: #071224 !important;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('/bg.png') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'jf-openhuninn' !important;
+}
+.btn-primary{
+    background-color: #DAC0A3 !important;
+    border: 0px !important;
+    color: #102C57 !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .btn-primary{
+        align-items: center !important;
+        justify-content: center !important;
+        min-width: 350px;
+        min-height: 60px;
+        border-radius: 100px !important;
+    }
+    .center{
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+
+.container-full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.content {
+    flex-grow: 1;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px; /* Optional: Add some padding at the bottom */
+}
+.container-full-height {
+    height: 100vh; /* 使用视口高度作为容器的高度 */
+    display: flex;
+    justify-content: center; /* 水平居中内容 */
+    align-items: center; /* 垂直居中内容 */
+}
+
+h1{
+    font-size: 40px !important;
+}
+
+.image-container {
+    display: inline-block; /* 让容器尺寸适应图片 */
+}
+
+.tea {
+    max-width: 20%; /* 确保图片不超出其容器 */
+    height: auto; /* 自适应高度 */
+    display: block; /* 解决图片下方留白问题 */
+    margin: 0 auto; /* 水平居中图片 */
+}
+
+@media (max-width:992px) {
+     .tea {
+    max-width: 50%; 
+    height: auto; 
+    display: block; /* 解决图片下方留白问题 */
+    margin: 0 auto; /* 水平居中图片 */
+}
+
+}
