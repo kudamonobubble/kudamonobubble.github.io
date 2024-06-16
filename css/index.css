@@ -51,7 +51,7 @@ body {
     padding-bottom: 20px; /* Optional: Add some padding at the bottom */
 }
 .container-full-height {
-    height: 80vh; /* 使用视口高度作为容器的高度 */
+    height: 40em; /* 使用视口高度作为容器的高度 */
     display: flex;
     justify-content: center; /* 水平居中内容 */
     align-items: center; /* 垂直居中内容 */
