@@ -73,10 +73,3 @@ button {
 .orange{
     color: #f88746 !important;
 }
-.contact-info-fixed {
-    position: fixed; /* 固定在畫面上 */
-    bottom: 55vh; /* 距離畫面底部的距離，可以根據需要調整 */
-    left: 50%; /* 水平置中 */
-    transform: translateX(-50%); /* 將元素水平置中 */
-    text-align: center; /* 文字置中 */
-}
