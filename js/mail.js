@@ -13,11 +13,11 @@ document.getElementById('email-form').addEventListener('submit', function(event)
             // 可以在这里执行其他成功后的操作，例如重置表单
             // this.reset();
         } else {
-            throw new Error('提交失败，请重试。');
+            throw new Error('送出失敗，請重試。');
         }
     })
     .catch(error => {
-        console.error('Fetch错误:', error);
+        console.error('Fetch錯誤:', error);
         alert(error.message);
     });
 });
