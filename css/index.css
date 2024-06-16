@@ -84,8 +84,8 @@ h1{
 }
 .video-container {
     position: relative;
-    width: 315px;
-    height: 560px;
+    width: 252px;
+    height: 448px;
     display: flex;
     justify-content: center;
     align-items: center;
