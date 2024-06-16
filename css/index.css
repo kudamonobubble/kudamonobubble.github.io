@@ -12,6 +12,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
+    background-color: #FEFAF6;
     background: url('/bg.png') no-repeat center center fixed; 
     background-size: cover;
     font-family: 'jf-openhuninn' !important;
