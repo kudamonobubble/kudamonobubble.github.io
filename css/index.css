@@ -75,7 +75,7 @@ h1{
 
 @media (max-width:992px) {
      .tea {
-    max-width: 50%; 
+    max-width: 40%; 
     height: auto; 
     display: block; /* 解决图片下方留白问题 */
     margin: 0 auto; /* 水平居中图片 */

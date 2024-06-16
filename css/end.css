@@ -50,11 +50,33 @@ body {
     padding-bottom: 20px; /* Optional: Add some padding at the bottom */
 }
 button {
-    border-radius: 30px !important;
+    border-radius: 15px !important;
     background-color: #DAC0A3 !important;
+    border: 0px;
     text-align: center;
+    height: 30px;
 }
 #email-form{
     text-align: center;
-    margin-top: 3em;
+}
+.email {
+    border: 2px solid #DAC0A3; /* 使用紅色邊框 */
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none; /* 移除默認的聚焦邊框 */
+    width: 250px;
+    height: 30px;
+}
+
+.orange{
+    color: #f88746 !important;
+}
+.contact-info-fixed {
+    position: fixed; /* 固定在畫面上 */
+    bottom: 55vh; /* 距離畫面底部的距離，可以根據需要調整 */
+    left: 50%; /* 水平置中 */
+    transform: translateX(-50%); /* 將元素水平置中 */
+    text-align: center; /* 文字置中 */
 }

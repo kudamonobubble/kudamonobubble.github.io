@@ -14,15 +14,16 @@
 <body>
     <div class="container-full-height">
         <div class="content ms-3 mt-5">
-            <h1 class="text-center mt-5 fs-1">非常感謝您！</h1>
-            <h3 class="text-center mt-5">填寫您的電子郵件，以接收最新消息！</h3>
-            <form id="email-form">
+            <h1 class="text-center mt-5 mb-5 fs-1">非常感謝您！</h1>
+            <h3 class="text-center mt-5">填寫電子郵件，即可接收最新消息！</h3>
+            <p class="text-center">日後將開放線上販售，敬請期待</p>
+            <form id="email-form" action="https://hooks.zapier.com/hooks/catch/19175121/2oqge6g/" method="post">
                 <label for="email">電子郵件:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" class="email" required>
                 <button type="submit">送出</button>
             </form>
-            <div class="success-message" id="success-message" style="display:none;">感謝您的喜愛！</div>
-            <p class="text-center mt-5">如有需團體訂購也可聯絡<br><a href="mailto:kudamonobubble@gmail.com">kudamonobubble@gmail.com</a></p>
+            <div class="success-message text-center orange mt-2" id="success-message" style="display:none;">已成功送出，感謝您的喜愛！</div>
+            <p class="text-center mt-5 contact-info-fixed">如有需團體訂購也可聯絡<br><a href="mailto:kudamonobubble@gmail.com">kudamonobubble@gmail.com</a></p>
         </div>
         <div class="footer">
             <a href="index.html" class="center">

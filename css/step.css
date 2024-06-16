@@ -46,7 +46,7 @@ body {
     flex-grow: 1;
 }
 .footer {
-    display: flex;
+    margin-bottom: 10px;
     justify-content: center !important;
     padding-bottom: 20px; /* Optional: Add some padding at the bottom */
 }
@@ -98,9 +98,7 @@ body {
     text-align: center;
     margin: 0 auto; /* 使 .answer 在容器中水平居中 */
 }
-.footer {
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
+
+.mt{
+    margin-top: 4.5em;
 }
