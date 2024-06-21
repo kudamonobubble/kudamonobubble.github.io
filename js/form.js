@@ -1,31 +1,19 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // 防止表單默認提交
-
-    const form = event.target;
+document.getElementById('email-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const form = this;
     const formData = new FormData(form);
 
-    fetch('https://formspree.io/f/xrgnnory', {
+    fetch(form.action, {
         method: 'POST',
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
+        body: formData
     }).then(response => {
         if (response.ok) {
-            form.reset();
-            document.getElementById('response-message').style.display = 'block';
-            // 在這裡進行重定向
-            window.location.href = "end.html";
+            window.location.href = 'end.html';
         } else {
-            return response.json().then(data => {
-                if (Object.hasOwnProperty.call(data, 'errors')) {
-                    alert(data.errors.map(error => error.message).join(", "));
-                } else {
-                    alert('Oops! There was a problem submitting your form');
-                }
-            });
+            alert('提交失敗，請稍後再試。');
         }
     }).catch(error => {
-        alert('Oops! There was a problem submitting your form');
+        console.error('Error:', error);
+        alert('提交失敗，請稍後再試。');
     });
 });
